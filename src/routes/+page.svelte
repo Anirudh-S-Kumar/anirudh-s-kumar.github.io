@@ -1,14 +1,13 @@
 <script lang="ts">
-    import Button from "$lib/shared/Button.svelte";
-
+    import Button from "$lib/shared/buttons/Button.svelte";
+    import Hero from "$lib/components/Hero.svelte";
+	import Header from "$lib/components/Header.svelte";
 
 </script>
 
+<div class="max-w-5xl m-auto px-10 text-inherit">
+    <Header/>
+    <Hero/>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+</div>
 
-<Button>
-    Hello
-    </Button>
-    
