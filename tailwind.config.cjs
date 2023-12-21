@@ -5,7 +5,8 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'sans' : ["Poppins", "Fira Monp", "monospace"]
+				'sans' : ["Poppins", "monospace"],
+				'mono' : ['Fira Mono', 'monospace']
 			},
 		}
 	},

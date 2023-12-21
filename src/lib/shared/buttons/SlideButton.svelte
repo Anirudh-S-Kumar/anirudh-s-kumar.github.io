@@ -13,7 +13,7 @@
 		<span
 			class="{isHovered
 				? 'text-[#3d91f9]'
-				: 'text-gray-200'} transition-all ease-in-out duration-200 text-xl"
+				: 'text-neutral-100'} transition-all ease-in-out duration-200 text-xl"
 		>
 			<slot />
 		</span>
