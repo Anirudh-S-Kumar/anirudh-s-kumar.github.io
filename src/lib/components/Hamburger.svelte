@@ -1,4 +1,4 @@
-<section class="h-full">
+<section>
     <nav>
       <input id="toggle1" type="checkbox" />
       <label class="hamburger1" for="toggle1">
@@ -8,29 +8,14 @@
       </label>
     
       <nav class="menu1">
-        <a class="link1" href="">Our Models</a>
-        <a class="link1" href="">Specialties</a>
-        <a class="link1" href="">About</a>
-        <a class="link1" href="">Blog</a>
-        <!-- <a class="link1" href="">Contact</a> -->
+        <a class="link1" href="">Experience</a>
+        <a class="link1" href="">Projects</a>
+        <a class="link1" href="">Contact</a>
       </nav>
   </nav>
   </section>
 
 <style>
-/* General */
-/* html {
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-} */
-
-/* body {
-  margin: 20px 0;
-  overflow: auto;
- 
-  color: #fff;
-} */
 
 a {
   color: #fff;
@@ -42,7 +27,6 @@ a {
 .hamburger1 {
   height: 45px;
   margin: 10px;
-  display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
@@ -55,7 +39,6 @@ a {
   width: 40px;
   height: 3px;
   margin-top: 7px;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -64,24 +47,21 @@ a {
 }
 
 #toggle1:checked + .hamburger1 .top {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   margin-top: 22.5px;
 }
 
 #toggle1:checked + .hamburger1 .meat {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   margin-top: -5px;
 }
 
 #toggle1:checked + .hamburger1 .bottom {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 #toggle1:checked ~ .menu1 {
-  height: 340px;
+  height: 200px;
 }
 
 
@@ -91,7 +71,7 @@ a {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-template-rows: 1fr repeat(3, 0.5fr);
   grid-row-gap: 25px;
   padding: 0;
   list-style: none;
