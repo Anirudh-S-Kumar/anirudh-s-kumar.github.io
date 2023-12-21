@@ -3,6 +3,7 @@
     import Hero from "$lib/components/Hero.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import Terminal from "$lib/components/Terminal.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 </script>
 
@@ -10,6 +11,6 @@
     <Header/>
     <Hero/>
     <Terminal/>
-
+    <Footer/>
 </div>
 
