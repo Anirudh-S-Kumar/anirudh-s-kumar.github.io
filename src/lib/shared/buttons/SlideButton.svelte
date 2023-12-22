@@ -12,13 +12,13 @@
 	<span class="relative">
 		<span
 			class="{isHovered
-				? 'text-[#3d91f9]'
+				? 'text-brand-primary'
 				: 'text-neutral-100'} transition-all ease-in-out duration-200 text-xl"
 		>
 			<slot />
 		</span>
 		<span
-			class="absolute left-0 h-1 bg-[#3d91f9] transition-all ease-in-out duration-200"
+			class="absolute left-0 h-1 bg-brand-primary transition-all ease-in-out duration-200"
 			style="width: {isHovered ? '100%' : '0'}; bottom: -5px;"
 		></span>
 	</span>
