@@ -6,6 +6,7 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import Contact from "$lib/components/Contact.svelte";
 	import Projects from "$lib/components/Projects.svelte";
+	import Skills from "$lib/components/Skills.svelte";
 
 </script>
 
@@ -17,6 +18,8 @@
 
 <div class="max-w-screen-xl m-auto px-10 text-inherit">
     <Projects/>
+
+    <Skills/>
 </div>
 
 <div class="max-w-5xl m-auto px-10 text-inherit">

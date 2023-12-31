@@ -1,4 +1,6 @@
 <script>
+	import GHSlideButton from "../buttons/GHSlideButton.svelte";
+
     export let project = {
         title: 'Project Title',
         description: 'This is a short description of the project.',
@@ -26,6 +28,8 @@
             </span>
         {/each}
     </div>
+    <div class="flex justify-center">
+        <GHSlideButton link={project.link} />
 
-    <a href={project.link} class="ml-3 text-lg"> Link Icon </a>
+    </div>
 </div>

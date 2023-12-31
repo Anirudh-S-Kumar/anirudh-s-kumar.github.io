@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import ProjectCard from '$lib/shared/ProjectCard.svelte';
+    import ProjectCard from '$lib/shared/cards/ProjectCard.svelte';
 
     let cardRefs:any[] = [];
 
@@ -34,6 +34,20 @@
             stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
             link: '#'
         },
+        {
+            id: 4,
+            title: 'Project 1',
+            description: 'Lorem ipsum dolor sit amet,',
+            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
+            link: '#'
+        },
+        {
+            id: 5,
+            title: 'Project 1',
+            description: 'Lorem ipsum dolor sit amet,',
+            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
+            link: '#'
+        },
 
     ]
 
@@ -56,8 +70,6 @@
 
 <div class="max-w-4/5 mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 items-stretch">
     {#each projects as project (project.id)}
-        <div class="p-4">
-            <ProjectCard bind:cardRef={cardRefs[project.id]} {project} />
-        </div>
+        <ProjectCard bind:cardRef={cardRefs[project.id]} {project} />
     {/each}
 </div>
