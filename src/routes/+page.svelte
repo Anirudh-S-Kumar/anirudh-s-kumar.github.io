@@ -7,6 +7,7 @@
 	import Contact from "$lib/components/Contact.svelte";
 	import Projects from "$lib/components/Projects.svelte";
 	import Skills from "$lib/components/Skills.svelte";
+	import Experience from "$lib/components/Experience.svelte";
 
 </script>
 
@@ -17,6 +18,7 @@
 </div>
 
 <div class="max-w-screen-xl m-auto px-10 text-inherit">
+    <Experience/>
     <Projects/>
 
     <Skills/>
