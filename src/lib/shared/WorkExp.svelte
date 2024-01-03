@@ -1,27 +1,30 @@
 <script lang="ts">
 	interface Experience {
-			startDate: string;
-			endDate: string;
-			title: string;
-			company: string;
-			logo: string;
-			tasks: string[];
+		startDate: string;
+		endDate: string;
+		title: string;
+		company: string;
+		tasks: string[];
 	}
 
-	export let experience:Experience;
+	export let experience: Experience;
 </script>
 
-<div class="relative -ml-20 text-white mb-2 h-60">
-	<div class="absolute top-7 left-0 ml-3 h-52 bg-brand-white w-2"></div>
-	<div class="absolute -top-1 left-0 ml-1 w-6 h-6 bg-brand-primary border-2 border-gray-500 rounded-full"></div>
-	<div class="absolute -top-1 left-0 -ml-52 text-lg">{experience.startDate} - {experience.endDate}</div>
-	<div class="absolute -top-5 left-0 ml-16 w-full">
-			<div class="text-6xl mb-4">{experience.company}</div>
-			<div class="mt-1 mb-6 text-brand-white text-xl">{experience.title}</div>
-			<ul class="mt-1 list-disc list-inside text-white">
-					{#each experience.tasks as task (task)}
-							<li>{task}</li>
-					{/each}
-			</ul>
+<div class="relative mb-2 ml-60 text-white">
+	<div class="absolute bottom-0 left-0 top-8 ml-3 w-2 bg-white pb-2 pt-2"></div>
+	<div class="ml-16 flex flex-col items-start">
+		<div class="flex">
+			<div class="-translate-y-5 text-6xl">{experience.company}</div>
+			<div class="absolute left-0 top-0 ml-1 h-6 w-6 rounded-full bg-brand-primary"></div>
+			<div class="absolute left-0 top-0 -ml-60 text-xl">
+				{experience.startDate} - {experience.endDate}
+			</div>
+		</div>
+		<div class="-mt-1 text-2xl text-gray-400">{experience.title}</div>
+		<ul class="mb-14 mt-1 list-inside list-disc text-xl text-white">
+			{#each experience.tasks as task (task + Math.random())}
+				<li class="my-2">{task}</li>
+			{/each}
+		</ul>
 	</div>
 </div>
