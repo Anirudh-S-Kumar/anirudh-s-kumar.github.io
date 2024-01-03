@@ -82,5 +82,6 @@
 		content: '\00a0';
 		background-color: whitesmoke;
 		animation: blink 1s step-end infinite;
+		animation-delay: 3s;
 	}
 </style>	
