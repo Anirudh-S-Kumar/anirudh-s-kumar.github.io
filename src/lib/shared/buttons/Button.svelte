@@ -1,24 +1,16 @@
-<script lang="ts">
-
-
-    export let color: string = "teal";
-
-    let btnClass: string = "";
-
-    if (color === "teal"){
-        btnClass = "text-white bg-teal-500 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2";
-    }
-    else if (color === "teal_outline"){
-        btnClass = "text-teal-500 border border-teal-500 hover:bg-teal-500 hover:text-white focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2";
-    }
-
-</script>
-
 <button
 	type="button"
-	class="{btnClass}"
-    on:click
-	><slot></slot>
-    
-    </button
+	on:click
+	class="group relative inline-block overflow-hidden border-brand-primary border-2 px-8 py-3 focus:outline-none focus:ring"
 >
+	<span
+		class="absolute inset-y-0 left-0 w-0 bg-brand-primary transition-all duration-150 ease-linear group-hover:w-full group-active:bg-brand-primary"
+	></span>
+
+	<span
+		class="relative text-sm font-medium text-brand-primary transition-colors duration-150 ease-linear group-hover:text-brand-black"
+	>
+    <slot />
+	</span>
+</button>
+

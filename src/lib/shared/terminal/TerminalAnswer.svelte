@@ -7,7 +7,7 @@
     export let is_list: boolean = false;
 </script>
 
-<div class="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg">
+<div class="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg pl-4">
     {#if is_list}
       <span class="text-[#E5C07A]">[</span>{#each answer_list as ans, i (i)}<span class="text-[#E5C07A]">"</span>{#if is_link}<a class="text-[#62AEEF]" href={link_list[i]}>{ans}</a>{:else}<span class="text-[#E5C07A]">{ans}</span>{/if}<span class="text-[#E5C07A]">"</span><span class="text-[#E5C07A]">{i === answer_list.length - 1 ? '' : ', '}</span>{/each}<span class="text-[#E5C07A]">]</span>
     {:else if is_link}

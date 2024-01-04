@@ -2,6 +2,7 @@
 	"Metadata": {
 		"Real_Name": "Anirudh S. Kumar",
 		"Pseudonym": "AfterChange",
+    "About" : "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",  
 		"Location": "Delhi, India",
 		"Resume": "",
 		"Interests": ["video games", "cooking", "badminton"]
@@ -41,5 +42,13 @@
     "link" : "https://www.google.com",
     "stack" : ["React", "Node.js", "MongoDB"]    
   }
-  ]
+  ],
+  "Skills" : [
+    "sklearn", "numpy", "pandas","plotly", "Svelte",
+    "Linux", "Git", "Docker",
+    "FastAPI", "Selenium", "Wireshark",
+    "MySQL", "LaTeX", "HTML/CSS/TS",
+    "C", "C++", "Java", "Python", "Bash"
+]
+  
 }
