@@ -1,0 +1,45 @@
+{
+	"Metadata": {
+		"Real_Name": "Anirudh S. Kumar",
+		"Pseudonym": "AfterChange",
+		"Location": "Delhi, India",
+		"Resume": "",
+		"Interests": ["video games", "cooking", "badminton"]
+	},
+	"Experience": [
+		{
+			"Company": "Network Security Lab",
+			"Start_Date": "Jan, 2020",
+			"End_Date": "Jan, 2021",
+			"Work": [
+				{
+					"Title": "Software Engineer",
+					"Start_Date": "Jan, 2020",
+					"End_Date": "Jan, 2021",
+					"Tasks": [
+						"Worked on the Windows team",
+						"Worked on the Windows team",
+						"Worked on the Windows team"
+					]
+				},
+				{
+					"Title": "Software Engineer",
+					"Start_Date": "Jan, 2020",
+					"End_Date": "Jan, 2021",
+					"Tasks": [
+						"Worked on the Windows team",
+						"Worked on the Windows team",
+						"Worked on the Windows team"
+					]
+				}
+			]
+		}
+	],
+  "Projects" : [{
+    "title" : "Project 1",
+    "description" : "This is a project",
+    "link" : "https://www.google.com",
+    "stack" : ["React", "Node.js", "MongoDB"]    
+  }
+  ]
+}

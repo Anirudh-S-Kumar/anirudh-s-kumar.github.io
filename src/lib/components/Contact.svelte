@@ -3,7 +3,7 @@
 		<div class="mb-12 flex w-full flex-col text-center">
 			<h1 class="mb-4 text-2xl font-medium text-gray-200 sm:text-3xl">Get in Touch</h1>
 		</div>
-		<div class="mx-auto lg:w-4/5">
+		<form class="mx-auto lg:w-4/5">
 			<div class="-m-2 flex flex-wrap">
 				<div class="w-full px-4 sm:w-1/2">
 					<div class="relative">
@@ -55,9 +55,9 @@
 								</svg>
 							</div>
 							<input
-								type="text"
+								type="email"
 								id="input-group-1"
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+								class="block w-full rounded-lg border p-2.5 ps-10 text-sm  border-brand-primary bg-brand-gray text-white placeholder-gray-400 dark:focus:border-brand-primary dark:focus:ring-brand-primary"
 								placeholder="john.doe@domain.com"
 							/>
 						</div>
@@ -85,7 +85,7 @@
 					>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </section>
 
