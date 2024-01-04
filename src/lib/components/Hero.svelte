@@ -1,5 +1,6 @@
 <script lang="ts">
-	let text:string = "AfterChange";
+	export let text:string;
+	export let about:string;
 	let displayText:string = "";
 	let index:number = 0;
 
@@ -18,13 +19,12 @@
 </script>
 
 <div>
-	<div class="terminal">
+	<div class="terminal" >
 		{displayText}
 	</div>
 
   <div class="text-gray-200 text-lg mt-10 sm:text-xl md:text-2xl">
-    I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity
-    
+	{about}
   </div>
 
 </div>
@@ -82,6 +82,6 @@
 		content: '\00a0';
 		background-color: whitesmoke;
 		animation: blink 1s step-end infinite;
-		animation-delay: 3s;
+		animation-delay: 3s; /* adjust as needed */
 	}
 </style>	

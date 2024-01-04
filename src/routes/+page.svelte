@@ -1,33 +1,41 @@
 <script lang="ts">
-    import Button from "$lib/shared/buttons/Button.svelte";
-    import Hero from "$lib/components/Hero.svelte";
-	import Header from "$lib/components/Header.svelte";
-	import Terminal from "$lib/components/Terminal.svelte";
-	import Footer from "$lib/components/Footer.svelte";
-	import Contact from "$lib/components/Contact.svelte";
-	import Projects from "$lib/components/Projects.svelte";
-	import Skills from "$lib/components/Skills.svelte";
-	import Experience from "$lib/components/Experience.svelte";
+	import Hero from '$lib/components/Hero.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Terminal from '$lib/components/Terminal.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Contact from '$lib/components/Contact.svelte';
+	import Projects from '$lib/components/Projects.svelte';
+	import Skills from '$lib/components/Skills.svelte';
+	import Experience from '$lib/components/Experience.svelte';
+	import { onMount } from 'svelte';
 
+	let content: any;
+
+	onMount(async () => {
+		const res = await fetch('/content.json');
+		content = await res.json();
+	});
 </script>
 
-<div class="max-w-5xl m-auto px-10 text-inherit">
-    <Header/>
-    <Hero/>
-    <Terminal/>
-</div>
+{#if content}
+	<div class="m-auto max-w-5xl px-10 text-inherit">
+		<Header />
+		<Hero 
+            text={content.Metadata.Pseudonym}
+            about={content.Metadata.About} />
+		<Terminal />
+	</div>
 
-<div class="max-w-screen-xl m-auto px-10 text-inherit">
-    <Experience/>
-    <Projects/>
+	<div class="m-auto max-w-screen-xl px-10 text-inherit">
+		<Experience />
+		<Projects />
 
-    <Skills/>
-</div>
+		<Skills />
+	</div>
 
-<div class="max-w-5xl m-auto px-10 text-inherit">
-    <Contact/>
-    
-    <Footer/>
+	<div class="m-auto max-w-5xl px-10 text-inherit">
+		<Contact />
 
-</div>
-
+		<Footer />
+	</div>
+{/if}
