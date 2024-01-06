@@ -1,5 +1,36 @@
 <script>
 	import Button from '$lib/shared/buttons/Button.svelte';
+
+	let status = '';
+	let displayStatus = false;
+	let isLoading = false;
+
+	const handleSubmit = async (data) => {
+		isLoading = true;
+		status = 'Submitting...';
+		const formData = new FormData(data.currentTarget);
+		const object = Object.fromEntries(formData);
+		const json = JSON.stringify(object);
+
+		const response = await fetch('https://api.web3forms.com/submit', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json'
+			},
+			body: json
+		});
+		const result = await response.json();
+		if (result.success) {
+			console.log(result);
+			status = result.message || 'Success';
+			displayStatus = true;
+			isLoading = false;
+			setTimeout(() => {
+				displayStatus = false;
+			}, 5000);
+		}
+	};
 </script>
 
 <section class="body-font relative text-gray-600">
@@ -8,7 +39,8 @@
 			<h1 class="mt-20 text-center text-4xl font-extrabold capitalize text-white">GET IN TOUCH</h1>
 			<hr class="border-1 mx-auto mb-12 mt-8 w-1/2 border-gray-500" />
 		</div>
-		<form class="mx-auto lg:w-4/5">
+		<form class="mx-auto lg:w-4/5" on:submit|preventDefault={handleSubmit}>
+			<input type="hidden" name="access_key" value="0075d88d-2b1d-455c-9252-98ae26385337" />
 			<div class="-m-2 flex flex-wrap">
 				<div class="w-full px-4 sm:w-1/2">
 					<div class="relative">
@@ -28,8 +60,9 @@
 								>
 							</div>
 							<input
+								name="name"
 								type="text"
-								id="input-group-1"
+								id="name"
 								class="block w-full rounded-lg border border-brand-gray bg-brand-gray p-2.5 ps-10 text-sm text-white placeholder-gray-400 focus:border-brand-primary focus:outline-none focus:ring-brand-primary"
 								placeholder="John Doe"
 							/>
@@ -60,8 +93,9 @@
 								</svg>
 							</div>
 							<input
+								name="email"
 								type="email"
-								id="input-group-1"
+								id="email"
 								class="block w-full rounded-lg border border-brand-gray bg-brand-gray p-2.5 ps-10 text-sm text-white placeholder-gray-400 focus:border-brand-primary focus:outline-none focus:ring-brand-primary"
 								placeholder="john.doe@domain.com"
 							/>
@@ -76,6 +110,7 @@
 							>Your message</label
 						>
 						<textarea
+							name="message"
 							id="message"
 							rows="4"
 							class="block w-full rounded-lg border border-brand-gray bg-brand-gray p-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-primary focus:outline-none focus:ring-brand-primary"
@@ -83,9 +118,31 @@
 						></textarea>
 					</div>
 					<div class="mt-10 flex justify-center">
-						<Button>Submit</Button>
+						<Button disabled={isLoading}>Submit</Button>
 					</div>
 				</div>
+				{#if displayStatus}
+					<div
+						class="mx-auto mb-3 mt-10 inline-flex w-1/2 items-center rounded-lg bg-brand-primary px-10 py-4 text-base text-brand-black"
+						role="alert"
+					>
+						<span class="mr-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="h-5 w-5"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</span>
+						Message sent successfully!
+					</div>
+				{/if}
 			</div>
 		</form>
 	</div>

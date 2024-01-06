@@ -1,6 +1,15 @@
+<script lang="ts">
+	import { createEventDispatcher } from "svelte";
+	
+	const dispatch = createEventDispatcher();
+	export let disabled = false;
+
+</script>
+
 <button
-	type="button"
-	on:click
+	disabled={disabled}
+	type="submit"
+	on:click={() => dispatch("submit")}
 	class="group relative inline-block overflow-hidden border-brand-primary border-2 px-8 py-3 focus:outline-none focus:ring"
 >
 	<span
