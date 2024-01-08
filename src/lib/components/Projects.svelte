@@ -4,54 +4,21 @@
 
     let cardRefs:any[] = [];
 
-    let projects = [
-        {
-            id: 0,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Sed euismod, diam eget aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl.',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
+    interface Project {
+        id: number,
+        title: string,
+        description: string,
+        stack: string[],
+        extern_link: string,
+        gh_link: string,
+        gh: boolean,
+        external: boolean
+    }
 
-        {
-            id: 1,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet,',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
-        {
-            id: 2,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet,',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
-        {
-            id: 3,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet,',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
-        {
-            id: 4,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet,',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
-        {
-            id: 5,
-            title: 'Project 1',
-            description: 'Lorem ipsum dolor sit amet,',
-            stack: ['Stack Item 1', 'Stack Item 2', 'Stack Item 3'],
-            link: '#'
-        },
-
-    ]
+    export let projects: Project[];
 
     onMount(() => {
+
         window.onload = () => {
             const maxHeight = Math.max(...cardRefs.map(ref => ref.offsetHeight));
             cardRefs.forEach(ref => {

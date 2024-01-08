@@ -93,10 +93,14 @@
 	],
 	"Projects": [
 		{
+			"id":1,
 			"title": "Delayma",
 			"description": "Designed an ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
-			"link": "https://delayma-ml.github.io/",
-			"stack": ["Python", "sklearn", "pandas", "plotly"]
+			"extern_link": "https://delayma-ml.github.io/",
+			"stack": ["Python", "sklearn", "pandas", "plotly"],
+			"external": true,
+			"gh_link": "https://github.com/Delayma-ML",
+			"gh" : true
 		}
 	],
 	"Skills": [

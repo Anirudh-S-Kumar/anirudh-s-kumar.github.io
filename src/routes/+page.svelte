@@ -28,7 +28,7 @@
 
 	<div class="m-auto max-w-screen-xl px-10 text-inherit">
 		<Experience experiences={content.Experience}/>
-		<Projects />
+		<Projects projects={content.Projects}/>
 
 		<Skills />
 	</div>

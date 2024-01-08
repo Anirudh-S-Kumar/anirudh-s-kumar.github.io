@@ -16,13 +16,13 @@
 </script>
 
 <div class="w-full sm:w-auto bg-brand-gray rounded-lg mt-20 text-black font-mono">
-    <div class="flex items-center bg-gray-300 rounded-t-lg p-2">
+    <div class="relative flex items-center bg-gray-300 rounded-t-lg p-3">
         <div class="flex space-x-2">
             <div class="w-3 h-3 rounded-full bg-red-500"></div>
             <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
             <div class="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
-        <p class="mx-auto ">/about</p>
+        <p class="absolute left-0 right-0 text-center mx-auto ">/about</p>
     </div>
     <div class="p-4 sm:p-10 text-gray-200">
         {#each qna_list as qna, i (i)}
