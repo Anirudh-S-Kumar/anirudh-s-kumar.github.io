@@ -1,6 +1,18 @@
 <script lang="ts">
     import TerminalAnswer from "$lib/shared/terminal/TerminalAnswer.svelte";
     import TerminalQuestion from "$lib/shared/terminal/TerminalQuestion.svelte";
+
+    interface TerminalQnA{
+        question: string;
+        answer: string;
+        link: string;
+        is_link: boolean;
+        is_list: boolean;
+        answer_list: string[];
+        link_list: string[];
+    }
+
+    export let qna_list: TerminalQnA[];
 </script>
 
 <div class="w-full sm:w-auto bg-brand-gray rounded-lg mt-20 text-black font-mono">
@@ -13,13 +25,16 @@
         <p class="mx-auto ">/about</p>
     </div>
     <div class="p-4 sm:p-10 text-gray-200">
-        <TerminalQuestion prompt="afterchange.real_name" />
-        <TerminalAnswer answer_list={["Siddharth Singh", "Lorem Ipsum"]} link_list={['#', '#']} is_link={true} is_list={true}  />
-        <TerminalQuestion prompt="afterchange.real_name" />
-        <TerminalAnswer answer={"Anirudh"} />
-        <TerminalQuestion prompt="afterchange.real_name" />
-        <TerminalAnswer answer={"Anirudh"} link={"#"} is_link={true} />
-        <TerminalQuestion prompt="afterchange.real_name" />
-        <TerminalAnswer answer_list={["Siddharth Singh", "Lorem Ipsum"]} link_list={['#', '#']}  is_list={true}  />
+        {#each qna_list as qna, i (i)}
+            <TerminalQuestion question={qna.question} />
+            <TerminalAnswer
+                answer={qna.answer}
+                link={qna.link}
+                is_link={qna.is_link}
+                is_list={qna.is_list}
+                answer_list={qna.answer_list}
+                link_list={qna.link_list}
+            />
+        {/each}
     </div>
 </div>  

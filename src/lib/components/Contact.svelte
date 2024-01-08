@@ -36,7 +36,7 @@
 <section class="body-font relative text-gray-600">
 	<div class="container mx-auto px-5">
 		<div class="mb-12 flex w-full flex-col text-center">
-			<h1 class="mt-20 text-center text-4xl font-extrabold capitalize text-white">GET IN TOUCH</h1>
+			<h1 class="mt-20 text-center text-3xl sm:text-4xl font-extrabold capitalize text-white">GET IN TOUCH</h1>
 			<hr class="border-1 mx-auto mb-12 mt-8 w-1/2 border-gray-500" />
 		</div>
 		<form class="mx-auto lg:w-4/5" on:submit|preventDefault={handleSubmit}>

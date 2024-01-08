@@ -19,11 +19,11 @@
 </script>
 
 <div>
-	<div class="terminal" >
+	<div class="terminal py-5 font-mono font-semibold text-2xl lg:text-9xl mt-8 text-white overflow-hidden" >
 		{displayText}
 	</div>
 
-  <div class="text-gray-200 text-lg mt-10 sm:text-xl md:text-2xl">
+  <div class="text-gray-200 text-md mt-5 lg:mt-10 sm:text-xl md:text-2xl">
 	{about}
   </div>
 
@@ -41,14 +41,6 @@
     }
 
     .terminal {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		font-family: 'Fira Mono', monospace;
-		font-weight: 500;
-		font-size: 1.6rem;
-		margin-top: 2rem;
-        color: whitesmoke;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
         letter-spacing: .15em; /* Adjust as needed */
         direction: ltr; /* Makes the animation start from left to right */
     }

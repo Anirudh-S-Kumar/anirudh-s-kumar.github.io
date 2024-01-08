@@ -62,7 +62,7 @@
 
 </script>
 
-<h1 class="font-extrabold text-4xl capitalize text-center text-white mt-20">
+<h1 class="font-extrabold text-3xl sm:text-4xl capitalize text-center text-white mt-20">
     PROJECTS
 </h1>
 

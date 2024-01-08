@@ -14,7 +14,7 @@
     bind:this={cardRef}
     class="flex h-full transform justify-between flex-col rounded-xl bg-brand-gray p-8 text-center text-brand-white shadow-lg transition-transform duration-200 ease-linear hover:-translate-y-2 sm:min-h-[20em] md:min-h-[25em] lg:min-h-[30em]"
 >
-    <h1 class="text-4xl font-semibold text-white sm:text-3xl md:text-4xl">
+    <h1 class="text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
         {project.title}
     </h1>
     <p class="mt-6 flex-grow text-sm sm:text-base md:text-lg">

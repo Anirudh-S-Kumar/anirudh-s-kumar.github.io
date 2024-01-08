@@ -1,8 +1,10 @@
 <script>
 	let isHovered = false;
+	export let href;
 </script>
 
-<button
+<a
+	href={href}
 	class="inline-flex items-center py-2 bg-transparent"
 	on:mouseover={() => (isHovered = true)}
 	on:focus={() => (isHovered = true)}
@@ -22,4 +24,4 @@
 			style="width: {isHovered ? '100%' : '0'}; bottom: -5px;"
 		></span>
 	</span>
-</button>
+</a>

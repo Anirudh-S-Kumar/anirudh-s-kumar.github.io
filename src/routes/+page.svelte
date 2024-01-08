@@ -23,11 +23,11 @@
 		<Hero 
             text={content.Metadata.Pseudonym}
             about={content.Metadata.About} />
-		<Terminal />
+		<Terminal qna_list={content.Terminal}/>
 	</div>
 
 	<div class="m-auto max-w-screen-xl px-10 text-inherit">
-		<Experience />
+		<Experience experiences={content.Experience}/>
 		<Projects />
 
 		<Skills />

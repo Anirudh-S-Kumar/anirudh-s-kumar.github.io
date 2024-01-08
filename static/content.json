@@ -1,54 +1,123 @@
 {
 	"Metadata": {
-		"Real_Name": "Anirudh S. Kumar",
 		"Pseudonym": "AfterChange",
-    "About" : "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",  
-		"Location": "Delhi, India",
-		"Resume": "",
-		"Interests": ["video games", "cooking", "badminton"]
+		"About": "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity"
 	},
+	"Terminal": [
+		{
+			"question": "afterchange.current_location",
+			"answer": "Delhi, India",
+			"link": "#",
+			"is_link": false,
+			"is_list": false,
+			"answer_list": [],
+			"link_list": []
+		},
+		{
+			"question": "afterchange.resume",
+			"answer": "resume.pdf",
+			"link": "/resume.pdf",
+			"is_link": true,
+			"is_list": false,
+			"answer_list": [],
+			"link_list": []
+		},
+		{
+			"question": "afterchange.education",
+			"answer": "Indraprastha Institute of Information Technology, Delhi",
+			"link": "#",
+			"is_link": false,
+			"is_list": false,
+			"answer_list": [],
+			"link_list": []
+		},
+		{
+			"question": "afterchange.contact_info",
+			"answer": "",
+			"link": "#",
+			"is_link": true,
+			"is_list": true,
+			"answer_list": ["email", "github", "linkedin"],
+			"link_list": [
+				"mailto:anirudh21517@iiitd.ac.in",
+				"https://github.com/Anirudh-S-Kumar/",
+				"https://www.linkedin.com/in/anirudh-s-kumar-341216130/"
+			]
+		},
+		{
+			"question": "afterchange.interests",
+			"answer": "",
+			"link": "#",
+			"is_link": false,
+			"is_list": true,
+			"answer_list": ["video games", "technology", "badminton", "running student clubs"],
+			"link_list": []
+		}
+	],
 	"Experience": [
 		{
-			"Company": "Network Security Lab",
-			"Start_Date": "Jan, 2020",
-			"End_Date": "Jan, 2021",
-			"Work": [
+			"company": "Network Security Lab, IIITD",
+			"start_date": "May, 2023",
+			"end_date": "Present",
+			"work": [
 				{
-					"Title": "Software Engineer",
-					"Start_Date": "Jan, 2020",
-					"End_Date": "Jan, 2021",
-					"Tasks": [
-						"Worked on the Windows team",
-						"Worked on the Windows team",
-						"Worked on the Windows team"
+					"title": "Undergraduate Reasearcher",
+					"start_date": "May, 2023",
+					"end_date": "Present",
+					"tasks": [
+						"Advisor: Dr. Sambuddo Chakravarty",
+						"Working in a team to utilize games as a medium for doing Real-Time Covert Communication (VoIP Calls)",
+						"Created various programs for mangling game packets and embedding covert data",
+						"Tech used: gstreamer, libnetfilter_queue, Linux, Wireshark, C, Python"
 					]
-				},
+				}
+				
+			]
+		},
+		{
+			"company": "CSE Department, IIITD",
+			"start_date": "May, 2023",
+			"end_date": "Present",
+			"work": [
 				{
-					"Title": "Software Engineer",
-					"Start_Date": "Jan, 2020",
-					"End_Date": "Jan, 2021",
-					"Tasks": [
-						"Worked on the Windows team",
-						"Worked on the Windows team",
-						"Worked on the Windows team"
+					"title": "Freelancer",
+					"start_date": "Jun, 2023",
+					"end_date": "Aug, 2023",
+					"tasks": [
+						"Wrote some automation scripts for the department",
+						"Tech used: Python, Google APIs, Apps Script"
 					]
 				}
 			]
 		}
 	],
-  "Projects" : [{
-    "title" : "Project 1",
-    "description" : "This is a project",
-    "link" : "https://www.google.com",
-    "stack" : ["React", "Node.js", "MongoDB"]    
-  }
-  ],
-  "Skills" : [
-    "sklearn", "numpy", "pandas","plotly", "Svelte",
-    "Linux", "Git", "Docker",
-    "FastAPI", "Selenium", "Wireshark",
-    "MySQL", "LaTeX", "HTML/CSS/TS",
-    "C", "C++", "Java", "Python", "Bash"
-]
-  
+	"Projects": [
+		{
+			"title": "Delayma",
+			"description": "Designed an ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
+			"link": "https://delayma-ml.github.io/",
+			"stack": ["Python", "sklearn", "pandas", "plotly"]
+		}
+	],
+	"Skills": [
+		"sklearn",
+		"numpy",
+		"pandas",
+		"plotly",
+		"Svelte",
+		"Linux",
+		"Git",
+		"Docker",
+		"FastAPI",
+		"Selenium",
+		"Wireshark",
+		"MySQL",
+		"LaTeX",
+		"HTML/CSS/TS",
+		"C",
+		"C++",
+		"Java",
+		"Python",
+		"Bash"
+	]
 }
