@@ -8,9 +8,9 @@
       </label>
     
       <nav class="menu1">
-        <a class="link1" href="">Experience</a>
-        <a class="link1" href="">Projects</a>
-        <a class="link1" href="">Contact</a>
+        <a class="link1" href="#experience">Experience</a>
+        <a class="link1" href="#projects">Projects</a>
+        <a class="link1" href="#contact">Contact</a>
       </nav>
   </nav>
   </section>

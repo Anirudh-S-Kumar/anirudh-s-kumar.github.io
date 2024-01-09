@@ -30,12 +30,12 @@
 		<Experience experiences={content.Experience}/>
 		<Projects projects={content.Projects}/>
 
-		<Skills />
+		<Skills skills={content.Skills}/>
 	</div>
 
 	<div class="m-auto max-w-5xl px-10 text-inherit">
-		<Contact />
+		<Contact token={content.Metadata.Web3Forms_Token}/>
 
-		<Footer />
+		<Footer links={content.Metadata.Links}/>	
 	</div>
 {/if}

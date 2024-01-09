@@ -1,12 +1,6 @@
 <script lang="ts">
 	import SkillCard from "$lib/shared/cards/SkillCard.svelte";
-    let skills:string[] = [
-        "sklearn", "numpy", "pandas","plotly", "Svelte",
-        "Linux", "Git", "Docker",
-        "FastAPI", "Selenium", "Wireshark",
-        "MySQL", "LaTeX", "HTML/CSS/TS",
-        "C", "C++", "Java", "Python", "Bash"
-    ]
+    export let skills:string[];
 </script>
 
 <h1 class="font-extrabold text-3xl sm:text-4xl capitalize text-center text-white mt-20">

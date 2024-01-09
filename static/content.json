@@ -1,7 +1,13 @@
 {
 	"Metadata": {
 		"Pseudonym": "AfterChange",
-		"About": "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity"
+		"About": "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",
+		"Links" : {
+			"mail" : "anirudh21517@iiitd.ac.in",
+			"github" : "https://github.com/Anirudh-S-Kumar",
+			"linkedin" : "https://www.linkedin.com/in/anirudh-s-kumar-341216130"
+		},
+		"Web3Forms_Token" : "0075d88d-2b1d-455c-9252-98ae26385337"
 	},
 	"Terminal": [
 		{
@@ -95,13 +101,64 @@
 		{
 			"id":1,
 			"title": "Delayma",
-			"description": "Designed an ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
+			"description": "ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
 			"extern_link": "https://delayma-ml.github.io/",
 			"stack": ["Python", "sklearn", "pandas", "plotly"],
 			"external": true,
 			"gh_link": "https://github.com/Delayma-ML",
 			"gh" : true
+		},
+		{
+			"id":2,
+			"title": "Linux ACLs",
+			"description": "A custom version of the Linux ACLs, with various methods to modify and retrive them, Also create other programs for creating files and directory which follow the custom ACLs, including a simple sudo program",
+			"extern_link": "#",
+			"stack": ["Linux", "C++"],
+			"external": false,
+			"gh_link": "https://github.com/Anirudh-S-Kumar/Linux-ACLs",
+			"gh" : true
+		},
+		{
+			"id":3,
+			"title": "Drugveda",
+			"description": "A complete online pharmaceutical store, with a backend written in FastAPI and a frontend written in SvelteKit, and a SQL Database hosted on Linode. Also created a simple selenium script to scrape the website for data",
+			"extern_link": "#",
+			"stack": ["Python", "TypeScript", "SQL", "FastAPI", "SvelteKit", "Selenium"],
+			"external": false,
+			"gh_link": "https://github.com/Caffeinated-Typists/DrugVeda",
+			"gh" : true
+		},
+		{
+			"id":4,
+			"title": "Lunchline",
+			"description": "A food pickup app, made as part of Anveshan'23. App was made using Android Studio and Kotlin, with the backend being handled by firebase",
+			"extern_link": "#",
+			"stack": ["Kotlin", "Android Studio", "Firebase"],
+			"external": false,
+			"gh" : true,
+			"gh_link": "https://github.com/Team-Betise/Lunchline"
+		},
+		{
+			"id":5,
+			"title": "Leetcode Automations",
+			"description": "Script for keeping track of Leetcode problems solved in a week, and updating the score in a Google Sheet",
+			"extern_link": "#",
+			"stack": ["Selenium", "Github Actions", "Google APIs", "Python"],
+			"external": false,
+			"gh" : true,
+			"gh_link": "https://github.com/Caffeinated-Typists/Leetcode-Automations"
+		},
+		{
+			"id":6,
+			"title": "This Website",
+			"description": "This website, made using SvelteKit and TailwindCSS, and hosted on Github Pages",
+			"extern_link": "#",
+			"stack": ["SvelteKit", "TailwindCSS", "Github Pages"],
+			"external": false,
+			"gh" : true,
+			"gh_link": "https://github.com/Anirudh-S-Kumar/anirudh-s-kumar.github.io"
 		}
+
 	],
 	"Skills": [
 		"sklearn",

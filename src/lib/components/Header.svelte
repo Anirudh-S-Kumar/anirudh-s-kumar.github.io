@@ -6,11 +6,11 @@
 
 <div class="hidden sm:flex sm:items-center md:justify-end sm:justify-center">
     <nav class="flex justify-around mt-10 w-full sm:w-96">
-        <SlideButton href="#">Experience</SlideButton>
+        <SlideButton href="#experience">Experience</SlideButton>
 
-        <SlideButton href="#">Projects</SlideButton>
+        <SlideButton href="#projects">Projects</SlideButton>
 
-        <SlideButton href="#">Contact</SlideButton>
+        <SlideButton href="#contact">Contact</SlideButton>
     </nav>
 </div>
 

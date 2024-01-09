@@ -10,7 +10,7 @@
 </script>
 
 
-<h1 class="font-extrabold text-3xl sm:text-4xl capitalize text-center text-white mt-20" >
+<h1 class="font-extrabold text-3xl sm:text-4xl capitalize text-center text-white mt-20" id="experience"  >
   EXPERIENCE
 </h1>
 

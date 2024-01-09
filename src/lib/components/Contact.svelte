@@ -1,13 +1,12 @@
-<script>
+<script lang="ts">
 	import Button from '$lib/shared/buttons/Button.svelte';
 
-	let status = '';
-	let displayStatus = false;
-	let isLoading = false;
+	export let token: string = "#";
+	let displayStatus: boolean = false;
+	let isLoading: boolean = false;
 
-	const handleSubmit = async (data) => {
+	const handleSubmit = async (data: { currentTarget: HTMLFormElement | undefined; }) => {
 		isLoading = true;
-		status = 'Submitting...';
 		const formData = new FormData(data.currentTarget);
 		const object = Object.fromEntries(formData);
 		const json = JSON.stringify(object);
@@ -23,7 +22,6 @@
 		const result = await response.json();
 		if (result.success) {
 			console.log(result);
-			status = result.message || 'Success';
 			displayStatus = true;
 			isLoading = false;
 			setTimeout(() => {
@@ -36,11 +34,11 @@
 <section class="body-font relative text-gray-600">
 	<div class="container mx-auto px-5">
 		<div class="mb-12 flex w-full flex-col text-center">
-			<h1 class="mt-20 text-center text-3xl sm:text-4xl font-extrabold capitalize text-white">GET IN TOUCH</h1>
+			<h1 class="mt-20 text-center text-3xl sm:text-4xl font-extrabold capitalize text-white" id="contact">GET IN TOUCH</h1>
 			<hr class="border-1 mx-auto mb-12 mt-8 w-1/2 border-gray-500" />
 		</div>
 		<form class="mx-auto lg:w-4/5" on:submit|preventDefault={handleSubmit}>
-			<input type="hidden" name="access_key" value="0075d88d-2b1d-455c-9252-98ae26385337" />
+			<input type="hidden" name="access_key" value={token} />
 			<div class="-m-2 flex flex-wrap">
 				<div class="w-full px-4 sm:w-1/2">
 					<div class="relative">
