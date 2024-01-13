@@ -82,7 +82,7 @@
 		{
 			"company": "CSE Department, IIITD",
 			"start_date": "May, 2023",
-			"end_date": "Present",
+			"end_date": "Aug, 2023",
 			"work": [
 				{
 					"title": "Freelancer",
@@ -90,6 +90,7 @@
 					"end_date": "Aug, 2023",
 					"tasks": [
 						"Wrote some automation scripts for the department",
+						"Created script to convert leave approval emails to Google Calendar events",
 						"Tech used: Python, Google APIs, Apps Script"
 					]
 				}
