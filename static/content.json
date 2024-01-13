@@ -90,7 +90,7 @@
 					"end_date": "Aug, 2023",
 					"tasks": [
 						"Wrote some automation scripts for the department",
-						"Created script to convert leave approval emails to Google Calendar events"
+						"Created script to convert leave approval emails to Google Calendar events",
 						"Tech used: Python, Google APIs, Apps Script"
 					]
 				}
