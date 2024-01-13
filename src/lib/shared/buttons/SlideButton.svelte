@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	let isHovered = false;
-	export let href;
+	export let href: string;
 </script>
 
 <a
-	href={href}
-	class="inline-flex items-center py-2 bg-transparent"
+	{href}
+	class="inline-flex items-center bg-transparent py-2"
 	on:mouseover={() => (isHovered = true)}
 	on:focus={() => (isHovered = true)}
 	on:mouseout={() => (isHovered = false)}
@@ -15,12 +15,12 @@
 		<span
 			class="{isHovered
 				? 'text-brand-primary'
-				: 'text-neutral-100'} transition-all ease-in-out duration-200 text-xl"
+				: 'text-neutral-100'} text-xl transition-all duration-200 ease-in-out"
 		>
 			<slot />
 		</span>
 		<span
-			class="absolute left-0 h-1 bg-brand-primary transition-all ease-in-out duration-200"
+			class="absolute left-0 h-1 bg-brand-primary transition-all duration-200 ease-in-out"
 			style="width: {isHovered ? '100%' : '0'}; bottom: -5px;"
 		></span>
 	</span>

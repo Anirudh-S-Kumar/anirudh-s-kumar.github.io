@@ -4,7 +4,7 @@
 </script>
 
 <a
-	class="inline-flex items-center bg-transparent py-2 flex-shrink-0s"
+	class="flex-shrink-0s inline-flex items-center bg-transparent py-2"
 	on:mouseover={() => (isHovered = true)}
 	on:focus={() => (isHovered = true)}
 	on:mouseout={() => (isHovered = false)}
@@ -46,7 +46,7 @@
 			</svg>
 		</span>
 		<span
-			class="absolute left-0 h-1 mt-2 bg-brand-primary transition-all duration-200 ease-in-out"
+			class="absolute left-0 mt-2 h-1 bg-brand-primary transition-all duration-200 ease-in-out"
 			style="width: {isHovered ? '100%' : '0'};"
 		></span>
 	</span>

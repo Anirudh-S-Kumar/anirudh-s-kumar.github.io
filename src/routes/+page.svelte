@@ -45,9 +45,8 @@
 	#gradient-background {
 		position: relative;
 		height: 100%;
-		background: 
-			radial-gradient(circle 400vh at top left, 		#00425e, #000000, transparent),
-			radial-gradient(circle 400vh at center right,	#461438, #000000, transparent),
+		background: radial-gradient(circle 400vh at top left, #00425e, #000000, transparent),
+			radial-gradient(circle 400vh at center right, #461438, #000000, transparent),
 			radial-gradient(circle 1000vh at bottom center, #00425e, #000000, transparent);
 	}
 </style>

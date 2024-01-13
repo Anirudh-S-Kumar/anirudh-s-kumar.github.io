@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Button from '$lib/shared/buttons/Button.svelte';
 
-	export let token: string = "#";
+	export let token: string = '#';
 	let displayStatus: boolean = false;
 	let isLoading: boolean = false;
 
-	const handleSubmit = async (data: { currentTarget: HTMLFormElement | undefined; }) => {
+	const handleSubmit = async (data: { currentTarget: HTMLFormElement | undefined }) => {
 		isLoading = true;
 		const formData = new FormData(data.currentTarget);
 		const object = Object.fromEntries(formData);
@@ -34,7 +34,12 @@
 <section class="body-font relative text-gray-600">
 	<div class="container mx-auto px-5">
 		<div class="mb-12 flex w-full flex-col text-center">
-			<h1 class="mt-20 text-center text-3xl sm:text-4xl font-extrabold capitalize text-white" id="contact">GET IN TOUCH</h1>
+			<h1
+				class="mt-20 text-center text-3xl font-extrabold capitalize text-white sm:text-4xl"
+				id="contact"
+			>
+				GET IN TOUCH
+			</h1>
 			<hr class="border-1 mx-auto mb-12 mt-8 w-1/2 border-gray-500" />
 		</div>
 		<form class="mx-auto lg:w-4/5" on:submit|preventDefault={handleSubmit}>

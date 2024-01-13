@@ -1,24 +1,26 @@
 <script lang="ts">
-	import LogoSlideButton from "$lib/shared/buttons/LogoSlideButton.svelte";
+	import LogoSlideButton from '$lib/shared/buttons/LogoSlideButton.svelte';
 
-    let year = new Date().getFullYear();
+	let year = new Date().getFullYear();
 
-    interface Links {
-        github: string;
-        linkedin: string;
-        mail: string;
-    }
+	interface Links {
+		github: string;
+		linkedin: string;
+		mail: string;
+	}
 
-    export let links: Links;
+	export let links: Links;
 </script>
 
-<footer class="text-gray-600 body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 md:text-md">©{year}  AfterChange
-    </p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 space-x-6   justify-center sm:justify-start">
-
-        <!-- <a class="ml-6 text-gray-500" href="mailto:${links.mail}">
+<footer class="body-font text-gray-600">
+	<div class="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row">
+		<p
+			class="md:text-md mt-4 text-sm text-gray-400 sm:ml-4 sm:mt-0 sm:border-gray-200 sm:py-2 sm:pl-4"
+		>
+			©{year} AfterChange
+		</p>
+		<span class="mt-4 inline-flex justify-center space-x-6 sm:ml-auto sm:mt-0 sm:justify-start">
+			<!-- <a class="ml-6 text-gray-500" href="mailto:${links.mail}">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24" style="--darkreader-inline-fill: currentColor; --darkreader-inline-stroke: currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
               <path stroke="none" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" style="--darkreader-inline-stroke: none;" data-darkreader-inline-stroke=""></path>
               <circle cx="4" cy="4" r="2" stroke="none" style="--darkreader-inline-stroke: none;" data-darkreader-inline-stroke=""></circle>
@@ -36,11 +38,9 @@
           <circle cx="4" cy="4" r="2" stroke="none" style="--darkreader-inline-stroke: none;" data-darkreader-inline-stroke=""></circle>
         </svg>
       </a> -->
-      <LogoSlideButton href="mailto:{links.mail}" type="mail"/>
-      <LogoSlideButton href={links.github} type="github"/>
-      <LogoSlideButton href={links.linkedin} type="linkedin"/>
-
-      
-    </span>
-  </div>
+			<LogoSlideButton href="mailto:{links.mail}" type="mail" />
+			<LogoSlideButton href={links.github} type="github" />
+			<LogoSlideButton href={links.linkedin} type="linkedin" />
+		</span>
+	</div>
 </footer>
