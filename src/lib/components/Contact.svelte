@@ -63,6 +63,7 @@
 								>
 							</div>
 							<input
+								required
 								name="name"
 								type="text"
 								id="name"
@@ -96,6 +97,7 @@
 								</svg>
 							</div>
 							<input
+								required
 								name="email"
 								type="email"
 								id="email"
@@ -118,6 +120,7 @@
 							rows="4"
 							class="block w-full rounded-lg border border-brand-gray bg-brand-gray p-2.5 text-sm text-white placeholder-gray-400 focus:border-brand-primary focus:outline-none focus:ring-brand-primary"
 							placeholder="Write your thoughts here..."
+							required
 						></textarea>
 					</div>
 					<div class="mt-10 flex justify-center">
