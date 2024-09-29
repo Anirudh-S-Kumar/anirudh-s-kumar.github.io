@@ -19,14 +19,14 @@
 			},
 			body: json
 		});
+
 		const result = await response.json();
 		if (result.success) {
-			console.log(result);
 			displayStatus = true;
 			isLoading = false;
 			setTimeout(() => {
 				displayStatus = false;
-			}, 5000);
+			}, 10000);
 		}
 	};
 </script>
@@ -127,6 +127,23 @@
 						<Button disabled={isLoading}>Submit</Button>
 					</div>
 				</div>
+
+				{#if isLoading}
+					<div
+						class="mx-auto mb-3 mt-10 inline-flex items-center rounded-lg px-10 py-4 text-base" 
+						role="alert"
+					>
+						<!-- <div class="flex items-center justify-center"> -->
+							<div class="relative">
+								<div class="h-20 w-20 rounded-full border-t-8 border-b-8 border-brand-gray"></div>
+								<div class="absolute top-0 left-0 h-20 w-20 rounded-full border-t-8 border-b-8 border-brand-primary animate-spin">
+								</div>
+							</div>
+						<!-- </div> -->
+					</div>
+				{/if}
+				
+
 				{#if displayStatus}
 					<div
 						class="mx-auto mb-3 mt-10 inline-flex w-1/2 items-center rounded-lg bg-brand-primary px-10 py-4 text-base text-brand-black"

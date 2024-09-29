@@ -1,7 +1,7 @@
 {
 	"Metadata": {
 		"Pseudonym": "AfterChange",
-		"About": "I am a 3rd year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",
+		"About": "I am a 4th year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",
 		"Links": {
 			"mail": "anirudh21517@iiitd.ac.in",
 			"github": "https://github.com/Anirudh-S-Kumar",
@@ -62,6 +62,25 @@
 	],
 	"Experience": [
 		{
+			"company" : "Ripik.Ai",
+			"start_date":"May, 2024",
+			"end_date" : "Jul, 2024",
+			"work" : [
+				{
+					"title" : "Backend Intern",
+					"start_date" :"May, 2024",
+					"end_date" :"Jul, 2024",
+					"tasks" : [
+						"Discovered 4 unauthenticated endpoints with unsanitized input",
+						"Resolved 4 critical misconfigurations in company's AWS account",
+						"Created internal documentation related to SQL injection attacks and prevention mechanism",
+						"Worked on Logging Data Pipeline for Notification incase of system failures",
+						"Skills used: Python, AWS, ELK Stack, MongoDB"
+					]
+				}
+			]
+		},
+		{
 			"company": "Network Security Lab, IIITD",
 			"start_date": "May, 2023",
 			"end_date": "Present",
@@ -71,27 +90,11 @@
 					"start_date": "May, 2023",
 					"end_date": "Present",
 					"tasks": [
-						"Advisor: Dr. Sambuddo Chakravarty",
+						"Advisor: Dr. Sambuddho Chakravarty",
 						"Working in a team to utilize games as a medium for doing Real-Time Covert Communication (VoIP Calls)",
-						"Created various programs for mangling game packets and embedding covert data",
-						"Tech used: gstreamer, libnetfilter_queue, Linux, Wireshark, C, Python"
-					]
-				}
-			]
-		},
-		{
-			"company": "CSE Department, IIITD",
-			"start_date": "May, 2023",
-			"end_date": "Aug, 2023",
-			"work": [
-				{
-					"title": "Freelancer",
-					"start_date": "Jun, 2023",
-					"end_date": "Aug, 2023",
-					"tasks": [
-						"Wrote some automation scripts for the department",
-						"Created script to convert leave approval emails to Google Calendar events",
-						"Tech used: Python, Google APIs, Apps Script"
+						"Created various programs for embedding covert data through use of game mods",
+						"Successful in able to achieve real-time covert communication in more than 3 games",
+						"Skills used: C/C++, Low level programming, Operating Systems, Computer Networks"
 					]
 				}
 			]
@@ -99,7 +102,25 @@
 	],
 	"Projects": [
 		{
-			"id": 1,
+			"title" : "Parallel Runtime",
+			"description" : "Created 4 different parallel runtimes based on a stripped version of HCLib and Argobots ",
+			"external" : false,
+			"extern_link" : "",
+			"gh" : false,
+			"gh_link" : "",
+			"stack" : ["C", "HCLib", "Argobots"]
+
+		},
+		{
+			"title": "Distributed Systems",
+			"description" : "Implemented RAFT algorithm of size 5, with leader lease for linearizable reads. Also implement K-Means algorithm using MapReduce and gRPC, able to handle points in n-dimensions, and custom number of mappers and reducers",
+			"external": false,
+			"extern_link" : "",
+			"gh_link" : "https://github.com/Caffeinated-Typists/DSCD-Assignments",
+			"gh" : true,
+			"stack" : ["Python", "gRPC"]
+		},
+		{
 			"title": "Delayma",
 			"description": "ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
 			"extern_link": "https://delayma-ml.github.io/",
@@ -109,7 +130,6 @@
 			"gh": true
 		},
 		{
-			"id": 2,
 			"title": "Linux ACLs",
 			"description": "A custom version of the Linux ACLs, with various methods to modify and retrive them, Also create other programs for creating files and directory which follow the custom ACLs, including a simple sudo program",
 			"extern_link": "#",
@@ -119,7 +139,6 @@
 			"gh": true
 		},
 		{
-			"id": 3,
 			"title": "Drugveda",
 			"description": "A complete online pharmaceutical store, with a backend written in FastAPI and a frontend written in SvelteKit, and a SQL Database hosted on Linode. Also created a simple selenium script to scrape the website for data",
 			"extern_link": "#",
@@ -129,27 +148,6 @@
 			"gh": true
 		},
 		{
-			"id": 4,
-			"title": "Lunchline",
-			"description": "A food pickup app, made as part of Anveshan'23. App was made using Android Studio and Kotlin, with the backend being handled by firebase",
-			"extern_link": "#",
-			"stack": ["Kotlin", "Android Studio", "Firebase"],
-			"external": false,
-			"gh": true,
-			"gh_link": "https://github.com/Team-Betise/Lunchline"
-		},
-		{
-			"id": 5,
-			"title": "Leetcode Automations",
-			"description": "Script for keeping track of Leetcode problems solved in a week, and updating the score in a Google Sheet",
-			"extern_link": "#",
-			"stack": ["Selenium", "Github Actions", "Google APIs", "Python"],
-			"external": false,
-			"gh": true,
-			"gh_link": "https://github.com/Caffeinated-Typists/Leetcode-Automations"
-		},
-		{
-			"id": 6,
 			"title": "This Website",
 			"description": "This website, made using SvelteKit and TailwindCSS, and hosted on Github Pages",
 			"extern_link": "#",
@@ -167,11 +165,16 @@
 		"Svelte",
 		"Linux",
 		"Git",
+		"AWS",
+		"gRPC",
+		"ELK Stack",
+		"MongoDB",
 		"Docker",
 		"FastAPI",
 		"Selenium",
 		"Wireshark",
 		"MySQL",
+		"PostgreSQL",
 		"LaTeX",
 		"HTML/CSS/TS",
 		"C",

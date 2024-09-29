@@ -11,11 +11,10 @@
 		gh: true,
 		gh_link: '#'
 	};
-	export let cardRef;
+	// export let cardRef;
 </script>
 
 <div
-	bind:this={cardRef}
 	class="flex h-full transform flex-col justify-between bg-brand-gray p-8 text-center text-brand-white shadow-lg transition-transform duration-200 ease-linear hover:-translate-y-2 sm:min-h-[20em] md:min-h-[25em] lg:min-h-[30em]"
 >
 	<h1 class="text-2xl font-semibold text-white sm:text-3xl md:text-4xl">

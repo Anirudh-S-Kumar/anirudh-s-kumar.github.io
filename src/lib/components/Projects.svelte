@@ -5,7 +5,7 @@
 	let cardRefs: any[] = [];
 
 	interface Project {
-		id: number;
+		// id: number;
 		title: string;
 		description: string;
 		stack: string[];
@@ -37,7 +37,8 @@
 <hr class="border-1 mx-auto mb-12 mt-8 w-1/2 border-gray-500" />
 
 <div class="max-w-4/5 mx-auto grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
-	{#each projects as project (project.id)}
-		<ProjectCard bind:cardRef={cardRefs[project.id]} {project} />
+	{#each projects as project }
+		<!-- <ProjectCard bind:cardRef={cardRefs[project.id]} {project} /> -->
+		 <ProjectCard {project} />
 	{/each}
 </div>
