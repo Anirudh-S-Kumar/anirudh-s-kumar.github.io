@@ -1,4 +1,3 @@
-<script>import "../app.css";
-import '../app.pcss';</script>
+<script>import "../app.css";</script>
 
 <slot></slot>

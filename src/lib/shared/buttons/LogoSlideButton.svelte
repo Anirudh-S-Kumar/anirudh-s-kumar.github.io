@@ -11,6 +11,13 @@
 	on:focus={() => (isHovered = true)}
 	on:mouseout={() => (isHovered = false)}
 	on:blur={() => (isHovered = false)}
+	aria-label={type === "mail"
+		? "Email Me"
+		: type === "github"
+			? "GitHub Profile"
+			: type === "linkedin"
+				? "LinkedIn Profile"
+				: "External Link"}
 >
 	<span class="relative">
 		<span
@@ -18,7 +25,7 @@
 				? 'text-brand-primary'
 				: 'text-neutral-100'} text-xl transition-all duration-200 ease-in-out"
 		>
-			{#if type === 'mail'}
+			{#if type === "mail"}
 				<svg
 					fill="currentColor"
 					stroke="currentColor"
@@ -46,7 +53,7 @@
 						data-darkreader-inline-stroke=""
 					></circle>
 				</svg>
-			{:else if type === 'github'}
+			{:else if type === "github"}
 				<svg
 					fill="currentColor"
 					stroke="currentColor"
@@ -74,7 +81,7 @@
 						data-darkreader-inline-stroke=""
 					></circle>
 				</svg>
-			{:else if type === 'linkedin'}
+			{:else if type === "linkedin"}
 				<svg
 					fill="currentColor"
 					stroke="currentColor"

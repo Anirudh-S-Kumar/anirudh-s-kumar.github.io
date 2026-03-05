@@ -1,5 +1,6 @@
 <script lang="ts">
-	export let link: string = '#';
+	export let link: string = "#";
+	export let ariaLabel: string = "View source on GitHub";
 	let isHovered = false;
 </script>
 
@@ -10,6 +11,7 @@
 	on:mouseout={() => (isHovered = false)}
 	on:blur={() => (isHovered = false)}
 	href={link}
+	aria-label={ariaLabel}
 >
 	<span class="relative">
 		<span

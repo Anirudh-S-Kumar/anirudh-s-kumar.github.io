@@ -1,5 +1,6 @@
 <script lang="ts">
-	export let link: string = '#';
+	export let link: string = "#";
+	export let ariaLabel: string = "View external link";
 	let isHovered = false;
 </script>
 
@@ -11,6 +12,7 @@
 	on:blur={() => (isHovered = false)}
 	href={link}
 	target="_blank"
+	aria-label={ariaLabel}
 >
 	<span class="relative">
 		<span

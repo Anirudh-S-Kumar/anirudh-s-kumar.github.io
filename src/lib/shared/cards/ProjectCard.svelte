@@ -1,15 +1,15 @@
 <script lang="ts">
-	import ExternalSlideButton from '../buttons/ExternalSlideButton.svelte';
-	import GHSlideButton from '../buttons/GHSlideButton.svelte';
+	import ExternalSlideButton from "../buttons/ExternalSlideButton.svelte";
+	import GHSlideButton from "../buttons/GHSlideButton.svelte";
 
 	export let project = {
-		title: 'Project Title',
-		description: 'This is a short description of the project.',
-		stack: ['Stack Item'],
-		extern_link: '#',
+		title: "Project Title",
+		description: "This is a short description of the project.",
+		stack: ["Stack Item"],
+		extern_link: "#",
 		external: false,
 		gh: true,
-		gh_link: '#'
+		gh_link: "#",
 	};
 	// export let cardRef;
 </script>
@@ -33,10 +33,16 @@
 	</div>
 	<div class="flex justify-evenly">
 		{#if project.external}
-			<ExternalSlideButton link={project.extern_link} />
+			<ExternalSlideButton
+				link={project.extern_link}
+				ariaLabel="View {project.title} live"
+			/>
 		{/if}
 		{#if project.gh}
-			<GHSlideButton link={project.gh_link} />
+			<GHSlideButton
+				link={project.gh_link}
+				ariaLabel="View {project.title} source on GitHub"
+			/>
 		{/if}
 	</div>
 </div>

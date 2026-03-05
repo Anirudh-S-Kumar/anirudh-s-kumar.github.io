@@ -1,6 +1,7 @@
 <script lang="ts">
 	let isHovered = false;
 	export let href: string;
+	export let ariaLabel: string = "";
 </script>
 
 <a
@@ -10,6 +11,7 @@
 	on:focus={() => (isHovered = true)}
 	on:mouseout={() => (isHovered = false)}
 	on:blur={() => (isHovered = false)}
+	aria-label={ariaLabel || undefined}
 >
 	<span class="relative">
 		<span
