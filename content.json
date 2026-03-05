@@ -1,11 +1,11 @@
 {
 	"Metadata": {
 		"Pseudonym": "AfterChange",
-		"About": "I am a 4th year Undergraduate student at IIIT Delhi, interested in all things related to Software Development and Cybersecurity",
+		"About": "I am a Software Engineer at TBO.com, interested in all things related to Software Development and Cybersecurity",
 		"Links": {
-			"mail": "anirudh21517@iiitd.ac.in",
+			"mail": "anirudh.skumar.03@gmail.com",
 			"github": "https://github.com/Anirudh-S-Kumar",
-			"linkedin": "https://www.linkedin.com/in/anirudh-s-kumar-341216130"
+			"linkedin": "https://www.linkedin.com/in/afterchange"
 		},
 		"Web3Forms_Token": "0075d88d-2b1d-455c-9252-98ae26385337"
 	},
@@ -30,7 +30,7 @@
 		},
 		{
 			"question": "afterchange.education",
-			"answer": "Indraprastha Institute of Information Technology, Delhi",
+			"answer": "B.Tech in CS with AI, Indraprastha Institute of Information Technology, Delhi (IIITD)",
 			"link": "#",
 			"is_link": false,
 			"is_list": false,
@@ -45,9 +45,9 @@
 			"is_list": true,
 			"answer_list": ["email", "github", "linkedin"],
 			"link_list": [
-				"mailto:anirudh21517@iiitd.ac.in",
-				"https://github.com/Anirudh-S-Kumar/",
-				"https://www.linkedin.com/in/anirudh-s-kumar-341216130/"
+				"mailto:anirudh.skumar.03@gmail.com",
+				"https://github.com/Anirudh-S-Kumar",
+				"https://www.linkedin.com/in/afterchange"
 			]
 		},
 		{
@@ -56,25 +56,44 @@
 			"link": "#",
 			"is_link": false,
 			"is_list": true,
-			"answer_list": ["video games", "technology", "badminton", "running student clubs"],
+			"answer_list": ["video games", "technology", "music", "running student clubs"],
 			"link_list": []
 		}
 	],
 	"Experience": [
 		{
-			"company" : "Ripik.Ai",
-			"start_date":"May, 2024",
-			"end_date" : "Jul, 2024",
-			"work" : [
+			"company": "TBO.com",
+			"start_date": "Jun, 2025",
+			"end_date": "Present",
+			"work": [
 				{
-					"title" : "Backend Intern",
-					"start_date" :"May, 2024",
-					"end_date" :"Jul, 2024",
-					"tasks" : [
-						"Discovered 4 unauthenticated endpoints with unsanitized input",
-						"Resolved 4 critical misconfigurations in company's AWS account",
-						"Created internal documentation related to SQL injection attacks and prevention mechanism",
-						"Worked on Logging Data Pipeline for Notification incase of system failures",
+					"title": "Software Engineer",
+					"start_date": "Jun, 2025",
+					"end_date": "Present",
+					"tasks": [
+						"Automated customer support query processing using LLMs to analyze and resolve email inquiries, reducing resolution time and operational costs",
+						"Engineered a real-time notification system for legacy tickets using Redis Streams and Golang",
+						"Developed a dynamic React UI to deliver a seamless user experience for ticket management",
+						"Developed a standardized metrics pipeline with automated alerting using Kafka, Timestream, and Grafana",
+						"Skills used: Golang, React, Redis, Kafka, AWS Timestream, Grafana, LLMs"
+					]
+				}
+			]
+		},
+		{
+			"company": "Ripik.Ai",
+			"start_date": "May, 2024",
+			"end_date": "Jul, 2024",
+			"work": [
+				{
+					"title": "Backend Intern",
+					"start_date": "May, 2024",
+					"end_date": "Jul, 2024",
+					"tasks": [
+						"Detected an unsanitized input vulnerability in an API endpoint allowing lateral privilege escalation",
+						"Remediated four critical AWS misconfigurations, hardening S3 bucket security and protecting administrative access",
+						"Produced technical documentation highlighting SQL injection risks and recommended secure coding practices",
+						"Worked on Logging Data Pipeline for Notification in case of system failures",
 						"Skills used: Python, AWS, ELK Stack, MongoDB"
 					]
 				}
@@ -83,18 +102,18 @@
 		{
 			"company": "Network Security Lab, IIITD",
 			"start_date": "May, 2023",
-			"end_date": "Present",
+			"end_date": "Jun, 2025",
 			"work": [
 				{
-					"title": "Undergraduate Reasearcher",
+					"title": "Undergraduate Researcher",
 					"start_date": "May, 2023",
-					"end_date": "Present",
+					"end_date": "Jun, 2025",
 					"tasks": [
-						"Advisor: Dr. Sambuddho Chakravarty",
-						"Working in a team to utilize games as a medium for doing Real-Time Covert Communication (VoIP Calls)",
-						"Created various programs for embedding covert data through use of game mods",
-						"Successful in able to achieve real-time covert communication in more than 3 games",
-						"Skills used: C/C++, Low level programming, Operating Systems, Computer Networks"
+						"Designed and implemented ViNET, a covert communication system using Video-over-LTE to bypass internet shutdowns",
+						"Achieved 200 kb/s throughput, 300x faster than prior audio-based covert systems",
+						"Ensured end-to-end encryption and resistance to machine learning-based traffic analysis",
+						"Authored peer-reviewed paper to appear in IEEE Euro S&P 2026",
+						"Skills used: C/C++, Low level programming, Operating Systems, Computer Networks, ML"
 					]
 				}
 			]
@@ -102,27 +121,44 @@
 	],
 	"Projects": [
 		{
-			"title" : "Parallel Runtime",
-			"description" : "Created 4 different parallel runtimes based on a stripped version of HCLib and Argobots ",
-			"external" : false,
-			"extern_link" : "",
-			"gh" : false,
-			"gh_link" : "",
-			"stack" : ["C", "HCLib", "Argobots"]
-
+			"title": "trm - temporary rm",
+			"description": "A Rust CLI tool for reversible file deletion by relocating files to a temporary directory. Features structured history logging, time-based recovery, and purge operations. Handles symlinks and permission edge cases across Linux systems.",
+			"external": false,
+			"extern_link": "#",
+			"gh": true,
+			"gh_link": "https://github.com/Anirudh-S-Kumar/trm",
+			"stack": ["Rust", "Clap", "Serde", "Unix"]
+		},
+		{
+			"title": "Fluid Simulation",
+			"description": "A 2D Fluid Simulator built from scratch using C++ and OpenGL utilizing the PCISPH algorithm. Implemented dynamic addition to the simulation and achieved 60+ FPS at 25,000 particles using Compute Shaders.",
+			"external": false,
+			"extern_link": "#",
+			"gh": true,
+			"gh_link": "https://github.com/Anirudh-S-Kumar/Fluid-Sim",
+			"stack": ["C++", "OpenGL", "Compute Shaders"]
 		},
 		{
 			"title": "Distributed Systems",
-			"description" : "Implemented RAFT algorithm of size 5, with leader lease for linearizable reads. Also implement K-Means algorithm using MapReduce and gRPC, able to handle points in n-dimensions, and custom number of mappers and reducers",
+			"description": "Implemented Raft Algorithm for a distributed key-value database with leader lease for linearizable reads. Created real-time testing setups using Docker Compose and GCP. Also built a scalable MapReduce-based KMeans algorithm.",
 			"external": false,
-			"extern_link" : "",
-			"gh_link" : "https://github.com/Caffeinated-Typists/DSCD-Assignments",
-			"gh" : true,
-			"stack" : ["Python", "gRPC"]
+			"extern_link": "",
+			"gh_link": "https://github.com/Caffeinated-Typists/DSCD-Assignments",
+			"gh": true,
+			"stack": ["Python", "Docker", "gRPC", "ZeroMQ"]
+		},
+		{
+			"title": "Parallel Runtime",
+			"description": "Created 4 different parallel runtimes based on HCLib and Argobots, optimized for performance and energy efficiency. Implemented a custom dynamic queue-rebalancing runtime achieving 30% speedup.",
+			"external": false,
+			"extern_link": "",
+			"gh": false,
+			"gh_link": "",
+			"stack": ["C/C++", "HCLib", "Argobots"]
 		},
 		{
 			"title": "Delayma",
-			"description": "ML Model to predict the delay of a flight based on various factors. Achieved an accuracy of 99% on the test set. Was selected as one of the best projects in the course.",
+			"description": "ML Model to predict flight delays with 99% accuracy. Selected as one of the best projects in the course. Features deep analysis of various factors affecting flight schedules.",
 			"extern_link": "https://delayma-ml.github.io/",
 			"stack": ["Python", "sklearn", "pandas", "plotly"],
 			"external": true,
@@ -131,7 +167,7 @@
 		},
 		{
 			"title": "Linux ACLs",
-			"description": "A custom version of the Linux ACLs, with various methods to modify and retrive them, Also create other programs for creating files and directory which follow the custom ACLs, including a simple sudo program",
+			"description": "A custom version of Linux ACLs with methods to modify and retrieve them. Includes programs for file/directory creation following custom ACLs and a simple sudo implementation.",
 			"extern_link": "#",
 			"stack": ["Linux", "C++"],
 			"external": false,
@@ -140,7 +176,7 @@
 		},
 		{
 			"title": "Drugveda",
-			"description": "A complete online pharmaceutical store, with a backend written in FastAPI and a frontend written in SvelteKit, and a SQL Database hosted on Linode. Also created a simple selenium script to scrape the website for data",
+			"description": "Online pharmaceutical store with FastAPI backend, SvelteKit frontend, and SQL database. Features automated data scraping using Selenium.",
 			"extern_link": "#",
 			"stack": ["Python", "TypeScript", "SQL", "FastAPI", "SvelteKit", "Selenium"],
 			"external": false,
@@ -149,38 +185,50 @@
 		},
 		{
 			"title": "This Website",
-			"description": "This website, made using SvelteKit and TailwindCSS, and hosted on Github Pages",
+			"description": "Portfolio website built with SvelteKit and TailwindCSS, hosted on GitHub Pages. Features a terminal-like interface and dynamic content rendering.",
 			"extern_link": "#",
-			"stack": ["SvelteKit", "TailwindCSS", "Github Pages"],
+			"stack": ["SvelteKit", "TailwindCSS", "GitHub Pages"],
 			"external": false,
 			"gh": true,
 			"gh_link": "https://github.com/Anirudh-S-Kumar/anirudh-s-kumar.github.io"
 		}
 	],
 	"Skills": [
-		"sklearn",
-		"numpy",
-		"pandas",
-		"plotly",
-		"Svelte",
-		"Linux",
-		"Git",
-		"AWS",
-		"gRPC",
-		"ELK Stack",
-		"MongoDB",
-		"Docker",
-		"FastAPI",
-		"Selenium",
-		"Wireshark",
-		"MySQL",
-		"PostgreSQL",
-		"LaTeX",
-		"HTML/CSS/TS",
+		"Golang",
+		"Rust",
 		"C",
 		"C++",
 		"Java",
 		"Python",
-		"Bash"
+		"JavaScript/TypeScript",
+		"SQL",
+		"LATEX",
+		"PostgreSQL",
+		"MySQL",
+		"Redis",
+		"MongoDB",
+		"AWS",
+		"GCP",
+		"Docker",
+		"Git/GitHub",
+		"GitHub Actions",
+		"Unix Shell",
+		"Linux",
+		"Vim",
+		"React",
+		"Svelte/SvelteKit",
+		"TailwindCSS",
+		"Fiber",
+		"FastAPI",
+		"Selenium",
+		"gRPC",
+		"Kafka",
+		"Pandas",
+		"NumPy",
+		"Matplotlib",
+		"sklearn",
+		"boto3",
+		"OpenGL",
+		"Compute Shaders"
 	]
 }
